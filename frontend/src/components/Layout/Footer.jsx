@@ -9,7 +9,7 @@ export default function Footer(){
                     <p>Give yourself a tasty treat</p>
                     <br />
                     <em>We give attention to genuine feedback</em>
-                    <strong>All rights received @patelburgerwala</strong>
+                    <strong>All rights received @bristoburger</strong>
                 </div>
                 <aside>
                     <h4>Follow Us</h4>

@@ -94,14 +94,14 @@ export default function Cart(){
                     />
                    
                     <CartItem 
-                    title={"cheese burger"} 
+                    title={"Veg Cheese burger"} 
                     img={burger2} 
                     value={vegCheeseBurger} 
                     increment={()=>increment(2)}  
                     decrement={()=>decrement(2)}
                    />
                     <CartItem 
-                    title={"cheese burger"} 
+                    title={"burger with fries"} 
                     img={burger3} 
                     value={burgerWithFries}
                     increment={()=>increment(3)}  

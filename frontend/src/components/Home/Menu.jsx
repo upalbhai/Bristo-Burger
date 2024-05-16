@@ -49,7 +49,7 @@ export default function Menu(){
                     itemNum={2}
                     burgerSrc={burger2}
                     price={250}
-                    title="cheese burger"
+                    title="Veg cheese burger"
                     handler={addToCartHandler}
                     delay={0.5}
                 />
@@ -57,7 +57,7 @@ export default function Menu(){
                     itemNum={3}
                     burgerSrc={burger3}
                     price={100}
-                    title="cheese burger"
+                    title="Burger with Fries"
                     handler={addToCartHandler}
                     delay={0.8}
                 />
