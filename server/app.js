@@ -11,7 +11,7 @@ require('dotenv').config({
 const cors = require('cors')
 const app = express();
 app.use(cookieParser());
-const __dirname = path.resolve();
+
 // using middlewares
 app.use(express.json());
 app.use(express.urlencoded({
