@@ -4,12 +4,14 @@ const session = require('express-session')
 const passport= require('passport')
 const cookieParser = require('cookie-parser');
 const errorMiddleWare  = require("./middlewares/errorMiddleware.js");
+const port = require('port');
 require('dotenv').config({
     path:"./config/config.env"
 });
 const cors = require('cors')
 const app = express();
 app.use(cookieParser());
+const __dirname = path.resolve();
 // using middlewares
 app.use(express.json());
 app.use(express.urlencoded({
@@ -47,7 +49,11 @@ app.use("/api/v1", userRoute)
 app.use("/api/v1", orderRoute)
 
 // using cors
+app.use(express.static(path.join(__dirname,'/frontend/dist')))
 
+app.get('*',(req,res)=>{
+    res.sendFile(path.join(__dirname,'frontend','dist','index.html'));
+})
 
 
 
