@@ -51,11 +51,7 @@ app.use("/api/v1", userRoute);
 app.use("/api/v1", orderRoute);
 
 // using cors
-app.use(express.static(path.join(__dirname, 'frontend/dist')));
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
-});
 
 app.use(errorMiddleWare); //using the custom error handling middleware
 
