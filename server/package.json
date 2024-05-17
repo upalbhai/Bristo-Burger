@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NODE_ENV=production node server.js",
+<<<<<<< HEAD
     "dev": "cross-env NODE_ENV=development nodemon server.js"
+=======
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+>>>>>>> 1e7c4ae5892f50b46fe6b234b0bf97d9ec461362
   },
   "author": "",
   "license": "ISC",
@@ -23,8 +28,12 @@
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
     "port": "^0.8.1",
+<<<<<<< HEAD
     "razorpay": "^2.9.2",
     "redis": "^4.6.14"
+=======
+    "razorpay": "^2.9.2"
+>>>>>>> 1e7c4ae5892f50b46fe6b234b0bf97d9ec461362
   },
   "devDependencies": {
     "cross-env": "^7.0.3"

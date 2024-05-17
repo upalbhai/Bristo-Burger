@@ -51,6 +51,10 @@ app.use("/api/v1", userRoute);
 app.use("/api/v1", orderRoute);
 
 // using cors
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e7c4ae5892f50b46fe6b234b0bf97d9ec461362
 
 
 app.use(errorMiddleWare); //using the custom error handling middleware
