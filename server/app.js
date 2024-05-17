@@ -21,6 +21,15 @@ app.use(express.urlencoded({
     extended: true,
 }));
 
+<<<<<<< HEAD
+=======
+app.use(express.static(path.join(__dirname,'/client/dist')))
+
+app.get('*',(req,res)=>{
+    res.sendFile(path.join(__dirname,'client','dist','index.html'));
+})
+
+>>>>>>> 3c73c57ab29362e5ee46e984318c59d27da39373
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
