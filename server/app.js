@@ -21,6 +21,12 @@ app.use(express.urlencoded({
     extended: true,
 }));
 
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+});
+
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
@@ -50,11 +56,6 @@ const orderRoute = require("./routes/order.js");
 app.use("/api/v1", userRoute);
 app.use("/api/v1", orderRoute);
 
-// using cors
-<<<<<<< HEAD
-=======
-
->>>>>>> 1e7c4ae5892f50b46fe6b234b0bf97d9ec461362
 
 
 app.use(errorMiddleWare); //using the custom error handling middleware
