@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {AiOutlineEye} from "react-icons/ai"
 import "..//../styles/table.scss";
-import me from "../../assets/founder.webp"
+import me from "../../assets/founder.jpg";
 import Loader from "../Layout/Loader"
 import { useDispatch, useSelector } from 'react-redux';
 import { getAdminUsers } from '../../redux/actions/admin';

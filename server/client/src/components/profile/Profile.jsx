@@ -1,6 +1,6 @@
 import "../../styles/profile.scss";
 import { Link } from "react-router-dom";
-import me from "../../assets/founder.webp";
+import me from "../../assets/founder.jpg";
 import {MdDashboard} from "react-icons/md"
 import {motion} from "framer-motion";
 import { useDispatch,useSelector } from "react-redux";

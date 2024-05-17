@@ -1,5 +1,5 @@
 import "..//../styles/about.scss";
-import me from "../../assets/founder.webp"
+import me from "../../assets/founder.jpg";
 import {RiFindReplaceLine} from "react-icons/ri"
 import { Link } from "react-router-dom";
 export default function About(){
