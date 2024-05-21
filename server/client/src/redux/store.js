@@ -15,4 +15,4 @@ const store= configureStore({
 
 export default store;
 
-export const server="http://bristo-burger.onrender.com/api/v1"
+export const server="https://bristo-burger.onrender.com/api/v1"
